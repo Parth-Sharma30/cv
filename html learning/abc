@@ -1,0 +1,33 @@
+from turtle import Turtle, Screen
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+snake = Turtle()
+screen.title("Snake Game")
+snake.shape("turtle")
+snake.color("white")
+loop = True
+screen.listen()
+screen.onkey(snake.right(90),"d")
+screen.onkey(snake.left(90),"a")
+while not loop == False :
+    snake.forward(10)
+    screen.update()
+screen.exitonclick()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
